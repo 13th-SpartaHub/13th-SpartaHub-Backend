@@ -3,7 +3,9 @@
 
 ----
 ### 📖 프로젝트 소개(SpartaHub) ###
-![SPARTA](https://github.com/user-attachments/assets/a83e87eb-24ef-4a42-a69c-96d72b33decc)
+![SPARTA](https://github.com/user-attachments/assets/f2b507b0-3918-4eea-b2eb-3a11f4c5fdca)
+
+
 
 ### MSA기반의 물류 관리 및 배송 시스템 ###
 - #### 프로젝트 목표 ####
