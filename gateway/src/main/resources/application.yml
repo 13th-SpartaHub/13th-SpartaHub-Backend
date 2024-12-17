@@ -40,7 +40,7 @@ spring:
         - id: shipment-service
           uri: lb://shipment-service
           predicates:
-            - Path=/api/v1/shipments/**, /api/v1/shipment-managers/**, /api/v1/shipment-routes/**
+            - Path=/api/v1/shipments/**, /api/v1/shipment-managers/**, /api/v1/shipment-routes/**, /shipment-service/**
           filters:
             - RewritePath=/shipment-service/(?<segment>.*), /$\{segment}
 
@@ -61,7 +61,7 @@ spring:
         - id: order-service
           uri: lb://order-service
           predicates:
-            - Path=/api/v1/orders/**
+            - Path=/api/v1/orders/**, /order-service/**
           filters:
             - RewritePath=/order-service/(?<segment>.*), /$\{segment}
 
