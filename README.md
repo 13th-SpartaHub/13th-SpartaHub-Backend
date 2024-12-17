@@ -16,12 +16,12 @@
   - MASTER, HUB_MANAGER, SHIPMENT_MANAGER, COMPANY_MANAGER의 권한으로 관리하여 진행
   - 사용자, 업체, 허브, 상품, 주문, 배송 도메인으로 구성
   - 모든 테이블에 Audit 필드 추가하여 데이터 감사로그 기록(논리삭제(is_deleted) 컬럼 사용)
-  - 개발기간 : 24.12.5 ~ 
+  - 개발기간 : 24.12.5 ~ 24.12.17
 ----
 ### 👩‍💻 팀원 역할 분담 ###
- - **신민철 :** 팀장
- - **지현구 :**
- - **임지은 :** 
+ - **신민철(팀장) :** `eureka server`, `gateway`, `user`, `slack`, `ai`, `company`, `product` 구현
+ - **지현구 :** `hub(hub, hubRoute)`, `order` 구현
+ - **임지은 :** `shipment(shipment, shipmentRoute, shipmentManager)` 구현
 ----
 ### 🔧 개발환경 ###
 - **Framework  :** Spring Boot 3.4.0
@@ -30,26 +30,17 @@
 - **IDE :** IntelliJ
 - **ORM :** JPA
 - **VCS :** GitHub(Forking Workflow 전략)
-----
-### ⚙️ 기술스택 ###
-- **Server :** 
 - **Database :** PostgreSQL, Redis
-- **Storage :** 
 - **API documentation:** Swagger
 ----
 ### 📝 ERD ###
-
-
-----
-### 📚 프로젝트 아키텍처 ###
-
+![image](https://github.com/user-attachments/assets/3461fa7e-c1d6-4536-bc84-0c16a28d8b8f)
 
 ----
-### 🖥️ API ###
-- **API 명세:** 
-- **Swagger:**
-- 
+### 📚 인프라 구성도 ###
+![image](https://github.com/user-attachments/assets/c3d985fd-533c-4e41-8e8e-51cc52b90b8a)
+
 ----
-### ⚙️서비스 구성 및 실행 방법 ###
-
-
+### 🖥️ API Docs ###
+- [API 명세서](https://teamsparta.notion.site/API-2feb032d3afd4efc9f2378574def97ba)
+- [Swagger](http://localhost:19091/swagger-ui/index.html)
