@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: slack-service
+  profiles:
+    active: ${ACTIVE}
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:19090/eureka/
+
+service:
+  slack:
+    request-url: ${SLACK_REQUEST_URL}
+
+server:
+  port: 19093
+
+management:
+  zipkin:
+    tracing:
+      endpoint: "http://localhost:9411/api/v2/spans"
+  tracing:
+    sampling:
+      probability: 1.0
+
+openapi:
+  service:
+    url: http://localhost:19091/slack-service
