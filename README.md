@@ -42,5 +42,5 @@
 
 ----
 ### 🖥️ API Docs ###
-- [API 명세서](https://teamsparta.notion.site/API-2feb032d3afd4efc9f2378574def97ba)
+- [API 명세서](https://teamsparta.notion.site/API-1672dc3ef5148174abe6ca332247f77f)
 - [Swagger](http://localhost:19091/swagger-ui/index.html)
